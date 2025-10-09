@@ -30,15 +30,21 @@ Use these exact settings in the Render form:
 - Select **Free** ($0/month) for testing
 - Or **Starter** ($7/month) for production with zero downtime
 
-### Step 4: Environment Variables
+### Step 4: Environment Variables (CRITICAL!)
 
-Click "Add Environment Variable" and add these two variables:
+**IMPORTANT:** You MUST add these environment variables or the app will show a blank page!
+
+Click "Add Environment Variable" and add these two variables EXACTLY as shown:
 
 1. **VITE_SUPABASE_URL**
+   - Key: `VITE_SUPABASE_URL` (copy exactly)
    - Value: `https://smvwzfwnhbbzofjejgbm.supabase.co`
 
 2. **VITE_SUPABASE_ANON_KEY**
+   - Key: `VITE_SUPABASE_ANON_KEY` (copy exactly)
    - Value: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtdnd6ZnduaGJiem9mamVqZ2JtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk5MjA1NTAsImV4cCI6MjA3NTQ5NjU1MH0.4c88O6iCO26O9jdviQJ_E0xk9l3QPiRYf4cM6ujSEuU`
+
+**Note:** Make sure there are no extra spaces or characters when pasting these values!
 
 ### Step 5: Deploy
 
